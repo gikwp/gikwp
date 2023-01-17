@@ -1,6 +1,8 @@
+</div><!--.container-->
 </main><!-- #main -->
 
-<?php wk_template( 'sections/footer' ); ?>
+<?php wk_template( 'sections/sidebar' ); ?>
+
 </div><!-- #app -->
 
 <?php wp_footer(); ?>
