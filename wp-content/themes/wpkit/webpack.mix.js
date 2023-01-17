@@ -15,7 +15,7 @@ require('@tinypixelco/laravel-mix-wp-blocks');
 
 mix
     .setPublicPath('./public')
-    .browserSync('wpkit.local');
+    .browserSync('gikwp.local');
 
 mix
     .sass('resources/styles/app.scss', 'styles')
@@ -32,7 +32,9 @@ mix
 
 mix
     .copyDirectory('resources/images', 'public/images')
-    .copyDirectory('resources/fonts', 'public/fonts');
+    .copyDirectory('resources/fonts', 'public/fonts')
+    .copyDirectory('node_modules/bootstrap-icons/font/fonts', 'public/icons/fonts')
+    .copyDirectory('node_modules/bootstrap-icons/font/bootstrap-icons.css', 'public/icons/icons.css');
 
 mix
     .sourceMaps()
