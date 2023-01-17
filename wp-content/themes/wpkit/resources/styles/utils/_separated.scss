@@ -1,0 +1,9 @@
+.separated {
+  &::after {
+    display: block;
+    clear: bottom;
+    height: 1px;
+    content: "";
+    background-color: var(--#{$prefix}separated-border-color);
+  }
+}
