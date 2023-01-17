@@ -27,6 +27,7 @@ add_action('wp_enqueue_scripts', function () {
     }
 
     wp_enqueue_style('wpkit/app.css', asset('styles/app.css'), false, null);
+    wp_enqueue_style('wpkit/icons.css', asset('icons/icons.css'), false, null);
 }, 100);
 
 /**

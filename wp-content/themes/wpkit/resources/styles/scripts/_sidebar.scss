@@ -1,0 +1,16 @@
+.sidebar {
+  width: $sidebar-width;
+  max-width: $sidebar-max-width;
+}
+
+.social-icons {
+  a {
+    color: var(--#{$prefix}social-icon-link-color);
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      color: var(--#{$prefix}social-icon-link-hover-color);
+    }
+  }
+}

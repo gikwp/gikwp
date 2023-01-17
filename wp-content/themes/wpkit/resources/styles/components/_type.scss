@@ -1,0 +1,40 @@
+
+// Paragraph
+p {
+  font-weight: $font-weight-light;
+}
+
+// Type display classes
+
+.display-3 {
+  font-size: rem-calc(30);
+  font-weight: $font-weight-light;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: rem-calc(16);
+  padding-bottom: rem-calc(8);
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $emerald;
+  }
+
+  &::before {
+    width: rem-calc(70);
+    height: 1px;
+    bottom: 0;
+  }
+
+  &::after {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: rem-calc(68);
+    bottom: -2px;
+    z-index: 100;
+  }
+}

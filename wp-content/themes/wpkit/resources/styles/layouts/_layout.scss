@@ -1,0 +1,10 @@
+body {
+  background-image: url("../images/logo-bg.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:top left;
+}
+
+.content-area {
+  padding-left: $sidebar-max-width;
+}

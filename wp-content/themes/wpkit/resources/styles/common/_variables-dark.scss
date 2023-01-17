@@ -1,0 +1,21 @@
+// Color Modes
+
+[data-bs-theme="dark"] {
+  --#{$prefix}body-bg: #{$revolver};
+  --#{$prefix}body-bg-rgb: #{to-rgb($revolver)};
+
+  .social-icons {
+    --#{$prefix}social-icon-link-color: #fff;
+    --#{$prefix}social-icon-link-hover-color: #{$emerald};
+  }
+
+  .menu {
+    --#{$prefix}menu-link-color: #{$white};
+    --#{$prefix}menu-link-color-hover: #{$emerald};
+    --#{$prefix}menu-link-border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .separated {
+    --#{$prefix}separated-border-color: rgba(255, 255, 255, 0.1);
+  }
+}
