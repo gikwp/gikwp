@@ -1,2 +1,14 @@
-$prefix: "wk-";
-$primary: #0032CB;
+$prefix: "gk-";
+
+// Theme Colors
+$revolver: #1F132A !default;
+$emerald: #5AC072 !default;
+$cinder: #0C0C14 !default;
+
+// Sidebar
+
+//scss-docs-start sidebar-variables
+$sidebar-width: 100% !default;
+$sidebar-max-width: rem-calc(250) !default;
+
+//scss-docs-end sidebar-variables
