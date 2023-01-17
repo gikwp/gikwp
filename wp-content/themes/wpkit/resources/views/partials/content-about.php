@@ -20,11 +20,11 @@ $me_sub_title   = get_field( 'sub_title' );
             ?>
           </figure>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-7">
           <h1 class="display-3"><?php the_title(); ?></h1>
 
           <?php if ( ! empty( $me_sub_title ) ): ?>
-            <h3 class="mb-3"><?php echo esc_html( $me_sub_title ); ?></h3>
+            <h3 class="fs-24 mb-4"><?php echo esc_html( $me_sub_title ); ?></h3>
           <?php endif; ?>
 
           <?php if ( $me_description ) {
