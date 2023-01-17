@@ -10,6 +10,8 @@
 <?php wp_body_open(); ?>
 <div id="app">
   <a class="visually-hidden-focusable" href="#main"><?php esc_html_e( 'Skip to content', 'wpkit' ); ?></a>
-
+  
   <main id="main" class="content-area py-3 mt-3">
-    <div class="container">
+    <?php /*wk_template('sections/header'); */?>
+
+    <div class="container px-lg-5">
