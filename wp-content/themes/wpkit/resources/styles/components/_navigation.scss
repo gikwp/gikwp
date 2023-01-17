@@ -1,0 +1,21 @@
+.menu {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    a {
+      text-decoration: none;
+      display: block;
+      color: var(--#{$prefix}menu-link-color);
+      border-bottom: 1px solid var(--#{$prefix}menu-link-border-color);
+      padding: rem-calc(8) 0;
+      transition: all 150ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: var(--#{$prefix}menu-link-color-hover);
+      }
+    }
+  }
+}
