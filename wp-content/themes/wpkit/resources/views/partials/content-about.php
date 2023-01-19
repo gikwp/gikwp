@@ -9,9 +9,7 @@ $me_description = get_field( 'description' );
 
 <div id="post-<?php the_id(); ?>" class="about-me">
     <!-- Start section about-info -->
-    <?php if ( ! empty( $me_image ) || ! empty( $me_description ) ): ?>
-		<?php wk_template( 'partials/about/about-info' ); ?>
-	<?php endif; ?>
+	<?php wk_template( 'partials/about/about-info' ); ?>
     <!-- End section about-info -->
 
     <!-- Start section web-info -->
