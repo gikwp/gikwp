@@ -1,6 +1,6 @@
 .about-info {
   .display-3 {
-    margin-bottom: rem-calc(35);
+    margin-bottom: rem-calc(28);
   }
 
   .image-block {
@@ -11,7 +11,7 @@
     img {
       width: 100%;
       height: 100%;
-      max-height: rem-calc(300);
+      max-height: rem-calc(160);
       position: absolute;
       display: block;
       object-fit: cover;
@@ -21,4 +21,41 @@
   p:last-child {
     margin-bottom: 0;
   }
+}
+
+.resume-info {
+  .display-3 {
+    margin-bottom: rem-calc(35);
+  }
+
+  .resume-row {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  .description p {
+    font-size: rem-calc(14);
+    font-weight: $font-weight-lighter;
+  }
+}
+
+.contact-form {
+  textarea.form-control {
+    min-height: rem-calc(100);
+  }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+  border-color: transparent;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: rem-calc(32) 0 0;
+  padding: 0;
+  border: none;
 }
