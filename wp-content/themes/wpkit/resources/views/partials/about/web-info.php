@@ -4,42 +4,39 @@
  * Displays section web info.
  */
 
+$heading   = get_field( 'webinfo_heading' );
+$content_1 = get_field( 'webinfo_content_1' );
+$content_2 = get_field( 'webinfo_content_2' );
+
+if ( empty( $heading ) && empty( $content_1 ) && empty( $content_2 ) ) {
+	return;
+}
+
+$col_1_class = ! empty( $content_2 ) ? 'col-7' : 'col-12';
+$col_2_class = ! empty( $content_1 ) ? 'col-5' : 'col-12';
 ?>
 <div class="separated my-lg-5"></div>
 <section id="web" class="web-info">
-    <h2 class="display-3">
-        Why do you need a website?
-    </h2>
+	<?php if ( ! empty( $heading ) ): ?>
+        <h2 class="display-3">
+			<?php echo esc_html( $heading ); ?>
+        </h2>
+	<?php endif; ?>
+
     <div class="row">
-        <div class="col-7">
-            <div class="text-block bg-cinder p-4 h-100">
-                <h5>
-                    A website is your opportunity to present yourself and your company.
-                </h5>
-                <p>
-                    You can order a small website to
-                    present your company, or create a huge online store with feedback, payment, delivery and personal account
-                    forms
-                    for each customer.
-                </p>
-                <p class="mb-0">
-                    The website is the face of your company or store. The main goal is to create a website competently so that
-                    buyers can easily remember it, be able to use it comfortably and have no questions when looking at the
-                    interface.
-                </p>
+		<?php if ( ! empty( $content_1 ) ): ?>
+            <div class="<?php echo esc_attr( $col_1_class ); ?>">
+                <div class="text-block bg-cinder p-4 h-100">
+					<?php echo $content_1; ?>
+                </div>
             </div>
-        </div>
-        <div class="col-5">
-            <div class="text-block bg-cinder p-4 h-100">
-                <h5>I'm creating:</h5>
-                <ul class="list-line mb-0">
-                    <li>Online stores of any complexity;</li>
-                    <li>Information resources with many sections or topics;</li>
-                    <li>Online stores based on ready-made solutions;</li>
-                    <li>Small websites and landings;</li>
-                    <li>Mobile applications.</li>
-                </ul>
+		<?php endif; ?>
+		<?php if ( ! empty( $content_2 ) ): ?>
+            <div class="<?php echo esc_attr( $col_2_class ); ?>">
+                <div class="text-block bg-cinder p-4 h-100">
+					<?php echo $content_2; ?>
+                </div>
             </div>
-        </div>
+		<?php endif; ?>
     </div>
 </section>
