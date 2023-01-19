@@ -39,6 +39,10 @@
   .description p {
     font-size: rem-calc(14);
     font-weight: $font-weight-lighter;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
