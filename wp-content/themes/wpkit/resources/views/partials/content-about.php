@@ -3,8 +3,6 @@
  * Displays content about-me.
  */
 
-$me_image       = get_field( 'image_im' );
-$me_description = get_field( 'description' );
 ?>
 
 <div id="post-<?php the_id(); ?>" class="about-me">
