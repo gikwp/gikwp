@@ -5,13 +5,14 @@
 
 $me_image       = get_field( 'image_im' );
 $me_description = get_field( 'description' );
-$me_sub_title   = get_field( 'sub_title' );
 ?>
 
 <div id="post-<?php the_id(); ?>" class="about-me">
-	<?php if ( ! empty( $me_image ) || ! empty( $me_description ) ): ?>
+    <!-- Start section about-info -->
+    <?php if ( ! empty( $me_image ) || ! empty( $me_description ) ): ?>
 		<?php wk_template( 'partials/about/about-info' ); ?>
 	<?php endif; ?>
+    <!-- End section about-info -->
 
     <!-- Start section web-info -->
 	<?php wk_template( 'partials/about/web-info' ); ?>
@@ -24,5 +25,4 @@ $me_sub_title   = get_field( 'sub_title' );
     <!-- Start section contacts -->
 	<?php wk_template( 'partials/about/contacts' ); ?>
     <!-- End section contacts -->
-
 </div>
