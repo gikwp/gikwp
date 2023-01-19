@@ -4,8 +4,13 @@
  * Displays section about info.
  */
 
-$me_image       = get_field( 'image_im' );
 $me_description = get_field( 'description' );
+
+if ( empty( $me_description ) ) {
+	return;
+}
+
+$me_image = get_field( 'image_im' );
 ?>
 <section class="about-info">
     <div class="row">
@@ -19,10 +24,7 @@ $me_description = get_field( 'description' );
         </div>
         <div class="col-md-8">
             <h1 class="display-3"><?php the_title(); ?></h1>
-			
-			<?php if ( $me_description ) {
-				echo $me_description;
-			} ?>
+			<?php echo $me_description; ?>
         </div>
     </div>
 </section>
