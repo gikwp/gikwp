@@ -6,7 +6,6 @@
 
 $me_image       = get_field( 'image_im' );
 $me_description = get_field( 'description' );
-$me_sub_title   = get_field( 'sub_title' );
 ?>
 <section class="about-info">
     <div class="row">
