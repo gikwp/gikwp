@@ -23,10 +23,6 @@ $me_sub_title   = get_field( 'sub_title' );
                 <div class="col-md-8">
                     <h1 class="display-3"><?php the_title(); ?></h1>
 					
-					<?php /*if ( ! empty( $me_sub_title ) ): */ ?><!--
-                        <h3 class="fs-24 mb-4"><?php /*echo esc_html( $me_sub_title ); */ ?></h3>
-					--><?php /*endif; */ ?>
-					
 					<?php if ( $me_description ) {
 						echo $me_description;
 					} ?>
