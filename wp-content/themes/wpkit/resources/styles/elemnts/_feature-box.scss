@@ -1,18 +1,50 @@
+
 .feature-box {
   height: 100%;
   background-color: var(--#{$prefix}fea-bg);
+}
 
-  /*&:hover {
-    color: var(--#{$prefix}feature-box-hover-color);
-    background-color: var(--#{$prefix}feature-box-hover-bg);
-  }*/
+.fea-title {
+  padding-bottom: rem-calc(16);
+  border-bottom: 1px solid var(--#{$prefix}fea-title-border-color);
+}
 
-  .title {
-    padding-bottom: rem-calc(16);
-    border-bottom: 1px solid var(--#{$prefix}fea-title-border-color);
-  }
-
+.fea-excerpt {
   p:last-child {
     margin-bottom: 0;
+  }
+}
+
+.btn-fea {
+  display: flex;
+  align-items: center;
+  font-size: rem-calc(13);
+  width: max-content;
+  font-weight: $font-weight-light;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  @include transition($transition-base);
+  transform-origin: right;
+
+  span {
+    margin-left: 3px;
+    font-size: rem-calc(21);
+    opacity: 0;
+    position: absolute;
+    right: auto;
+    left: 0;
+    @include transition($transition-base);
+    transform-origin: right;
+  }
+
+  &:hover {
+    padding-right: rem-calc(26);
+
+    span {
+      opacity: 1;
+      right: 0;
+      left: auto;
+    }
   }
 }
