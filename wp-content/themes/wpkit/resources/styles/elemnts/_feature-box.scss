@@ -1,0 +1,18 @@
+.feature-box {
+  height: 100%;
+  background-color: var(--#{$prefix}fea-bg);
+
+  /*&:hover {
+    color: var(--#{$prefix}feature-box-hover-color);
+    background-color: var(--#{$prefix}feature-box-hover-bg);
+  }*/
+
+  .title {
+    padding-bottom: rem-calc(16);
+    border-bottom: 1px solid var(--#{$prefix}fea-title-border-color);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
