@@ -1,0 +1,33 @@
+.btn-theme {
+  --#{$prefix}btn-theme-color: #{$white};
+  --#{$prefix}btn-theme-hover-color: #{$emerald};
+  --#{$prefix}btn-theme-bg: #{$emerald};
+  --#{$prefix}btn-theme-hover-bg: #{$white};
+  --#{$prefix}btn-theme-border-color: #{$emerald};
+  --#{$prefix}btn-theme-hover-border-color: #{$emerald};
+  --#{$prefix}btn-theme-shadow-color: #{$white};
+  --#{$prefix}btn-theme-hover-shadow-color: #{$emerald};
+
+  color: var(--#{$prefix}btn-theme-color);
+  background-color: $emerald;
+  border: 0;
+  border-radius: 0;
+  font-weight: $font-weight-light;
+  padding: rem-calc(8) rem-calc(18);
+  box-shadow: 4px 4px 0 var(--#{$prefix}btn-theme-shadow-color);
+
+  &:hover,
+  &.active,
+  &:active,
+  &:first-child:active {
+    color: var(--#{$prefix}btn-theme-hover-color);
+    background-color: var(--#{$prefix}btn-theme-hover-bg);
+    box-shadow: 4px 4px 0 var(--#{$prefix}btn-theme-hover-shadow-color);
+  }
+
+  &:focus {
+    color: var(--#{$prefix}btn-theme-color);
+    background-color: $emerald;
+    box-shadow: 4px 4px 0 var(--#{$prefix}btn-theme-shadow-color);
+  }
+}

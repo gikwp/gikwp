@@ -18,4 +18,21 @@
   .separated {
     --#{$prefix}separated-border-color: rgba(255, 255, 255, 0.1);
   }
+
+  .list-line {
+    --#{$prefix}list-line-marker-color: #{$emerald};
+  }
+
+  a {
+    --#{$prefix}link-color: #{$emerald};
+    --#{$prefix}link-color-hover: #{$emerald};
+  }
+
+  .feature-box {
+    --#{$prefix}fea-bg: #{$cinder};
+    --#{$prefix}fea-hover-bg: #{$emerald};
+    --#{$prefix}fea-hover-color: #{$white};
+    --#{$prefix}fea-color: #{$white};
+    --#{$prefix}fea-title-border-color: rgba(255, 255, 255, 0.1);
+  }
 }
