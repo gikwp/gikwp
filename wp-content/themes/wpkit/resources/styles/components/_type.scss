@@ -1,7 +1,37 @@
+// List
+.list-line {
+  padding-left: rem-calc(16);
+
+  li::marker {
+    content: "– ";
+    color: var(--#{$prefix}list-line-marker-color);
+  }
+}
+
+ul {
+  font-weight: $font-weight-lighter;
+}
 
 // Paragraph
 p {
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-lighter;
+
+  strong {
+    color: $emerald;
+  }
+}
+
+// Link
+a {
+  color: var(--#{$prefix}link-color);
+  text-decoration: underline dashed;
+  text-decoration-thickness: 1px;
+  @include transition($transition-base);
+
+  &:hover {
+    color: var(--#{$prefix}link-color-hover);
+    text-decoration: none;
+  }
 }
 
 // Type display classes
@@ -12,7 +42,7 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: rem-calc(16);
+  margin-bottom: rem-calc(35);
   padding-bottom: rem-calc(8);
 
   &::before,
