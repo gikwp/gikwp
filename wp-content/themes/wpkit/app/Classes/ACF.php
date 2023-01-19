@@ -46,5 +46,3 @@ class ACF {
     return $option_page;
   }
 }
-
-new ACF();
