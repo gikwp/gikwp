@@ -14,9 +14,9 @@ $experience_title = get_field( 'experience_title' );
 <div class="separated my-lg-5"></div>
 <section id="resume" class="resume-info">
 	<?php if ( ! empty( $experience_title ) ): ?>
-        <h2 class="display-3">
+        <h3 class="display-3">
 			<?php echo esc_html( $experience_title ); ?>
-        </h2>
+        </h3>
 	<?php endif; ?>
 
     <div class="resume-box bg-cinder">
