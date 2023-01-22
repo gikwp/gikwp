@@ -27,13 +27,14 @@
   @include transition($transition-base);
   transform-origin: right;
 
-  span {
+  i {
     margin-left: 3px;
     font-size: rem-calc(21);
     opacity: 0;
     position: absolute;
     right: auto;
     left: 0;
+    z-index: 10;
     @include transition($transition-base);
     transform-origin: right;
   }
@@ -41,10 +42,16 @@
   &:hover {
     padding-right: rem-calc(26);
 
-    span {
+    i {
       opacity: 1;
       right: 0;
       left: auto;
     }
+  }
+
+  span {
+    position: relative;
+    z-index: 20;
+    background-color: var(--#{$prefix}fea-bg);
   }
 }
