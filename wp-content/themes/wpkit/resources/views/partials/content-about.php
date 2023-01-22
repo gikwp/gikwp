@@ -13,9 +13,9 @@
     <!-- Start section web-info -->
 	<?php wk_template( 'partials/about/web-info' ); ?>
     <!-- End section web-info -->
-
+    
     <!-- Start section experience -->
-	<?php wk_template( 'partials/about/experience' ); ?>
+	<?php /*wk_template( 'partials/about/experience' ); */?>
     <!-- End section experience -->
 
     <!-- Start section contacts -->
