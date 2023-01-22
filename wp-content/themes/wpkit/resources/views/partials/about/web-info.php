@@ -18,9 +18,9 @@ $col_2_class = ! empty( $content_1 ) ? 'col-5' : 'col-12';
 <div class="separated my-lg-5"></div>
 <section id="web" class="web-info">
 	<?php if ( ! empty( $heading ) ): ?>
-        <h2 class="display-3">
+        <h3 class="display-3">
 			<?php echo esc_html( $heading ); ?>
-        </h2>
+        </h3>
 	<?php endif; ?>
 
     <div class="row">
