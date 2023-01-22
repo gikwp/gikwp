@@ -8,8 +8,8 @@
         </div>
         <div class="fea-footer pt-4 mt-auto">
             <a href="#" class="btn-fea">
-				<?php echo esc_html_e( 'Request price', 'wpkit' ); ?>
-                <span><i class="bi bi-arrow-right"></i></span>
+                <span><?php echo esc_html_e( 'Request price', 'wpkit' ); ?></span>
+                <i class="bi bi-arrow-right"></i>
             </a>
         </div>
     </div>
